@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Picklist of Accounts">
+        <div class="slds-p-around_medium">
+            <lightning-combobox
+                name="progress"
+                label="Industry"
+                value={value}
+                placeholder="Select Industry"
+                options={transformedData}
+                onchange={handleChange}>
+            </lightning-combobox>
+            <p>Selected Industry value is: {value}</p>
+        </div>
+
+        <div class="slds-p-around_medium">
+            <lightning-combobox
+                name="Type Value"
+                label="Type"
+                value={value_type}
+                placeholder="Select Type"
+                options={transformedData_type}
+                onchange={handleChange_type}>
+            </lightning-combobox>
+            <p>Selected Type value is: {value_type}</p>
+        </div>
+    </lightning-card>
+</template>

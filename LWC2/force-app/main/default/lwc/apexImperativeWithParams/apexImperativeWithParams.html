@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Apex Imperatively with params">
+        <div class="slds-p-around_medium">
+<lightning-input label="Enter the account name" type="search" onchange={changeHadler} value={searchKey}></lightning-input>
+<template if:true={accounts}>
+    <template for:each={accounts} for:item="account">
+        <div class="slds-box" key={account.Id}>
+            <p><strong>Name:</strong>{account.Name}</p>
+            <p><strong>Type:</strong>{account.Type}</p>
+            <p><strong>Industry:</strong>{account.Industry}</p>
+            </div>
+    </template>
+     </template>
+        </div>
+    </lightning-card>
+
+</template>

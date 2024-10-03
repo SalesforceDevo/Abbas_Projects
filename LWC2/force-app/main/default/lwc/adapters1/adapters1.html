@@ -1,0 +1,15 @@
+<template>
+  <!-- 1. -->
+  <lightning-card title="getObjectInfo API to get the metadata of Account object">
+      <div class="slds-var-m-around_medium">
+          <template if:true={recordtypeId}>
+              <div>Record Type ID: {recordtypeId}</div>
+              <div>API Name: {accountApiName}</div>
+          </template>
+          <template if:false={recordtypeId}>
+              <div>Loading Account details...</div>
+          </template>
+      </div>
+  </lightning-card>
+
+</template>

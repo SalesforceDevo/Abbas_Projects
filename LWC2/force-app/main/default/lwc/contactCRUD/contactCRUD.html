@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Contact Manager">
+        <!-- Create Contact Form -->
+        <lightning-input label="First Name" value={newContact.FirstName} data-id="FirstName" onchange={handleFieldChange}></lightning-input>
+        <lightning-input label="Last Name" value={newContact.LastName} data-id="LastName" onchange={handleFieldChange}></lightning-input>
+        <lightning-input label="Email" value={newContact.Email} data-id="Email" onchange={handleFieldChange}></lightning-input>
+        <lightning-input label="Phone" value={newContact.Phone} data-id="Phone" onchange={handleFieldChange}></lightning-input>
+        <lightning-button label="Create Contact" onclick={handleCreateContact} class="slds-m-top_small"></lightning-button>
+
+        <!-- Contact List -->
+        <lightning-datatable
+            data={contacts}
+            columns={columns}
+            key-field="Id"
+            onsave={handleUpdateContact}
+            draft-values={draftValues}
+            onrowaction={handleRowAction}
+        ></lightning-datatable>
+    </lightning-card>
+</template>

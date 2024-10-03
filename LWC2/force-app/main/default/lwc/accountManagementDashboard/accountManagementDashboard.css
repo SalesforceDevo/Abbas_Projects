@@ -1,0 +1,47 @@
+.card {
+    max-width: 100%;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 12px;
+}
+
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.filter-combobox {
+    flex: 1;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 6px;
+    background-color: #f0f8ff; /* Light blue background for comboboxes */
+    border: 1px solid #a0c4ff; /* Light blue border */
+}
+
+.datatable-container {
+    overflow-x: auto;
+}
+
+.custom-datatable {
+    width: 100%;
+    min-width: 1200px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background for the datatable */
+}
+
+.slds-form-element__label {
+    font-weight: bold;
+    color: #333333; /* Dark gray for labels */
+}
+
+/* Optional: Add hover effect for comboboxes */
+.filter-combobox:hover {
+    border-color: #4a90e2; /* Darker blue on hover */
+}

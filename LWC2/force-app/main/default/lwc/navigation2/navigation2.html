@@ -1,0 +1,40 @@
+<template>
+     <!-- Navigation to record page in a contact view mode -->
+     <lightning-card title="Navigation to record page in a contact view mode">
+        <lightning-button label="Navigate to record page " variant="brand" onclick={NavtoRecordPage}></lightning-button>
+     </lightning-card>  
+
+          <!-- Navigation to record page in a contact edit mode -->
+          <lightning-card title="Navigation to record page in a contact edit mode">
+            <lightning-button label="Navigate to record page " variant="brand" onclick={NavtoRecordPage}></lightning-button>
+         </lightning-card>
+
+             <!-- Navigation to a Tab -->
+          <lightning-card title="Navigation to a Tab">
+            <lightning-button label="Navigate to tab " variant="brand" onclick={NavtoTab}></lightning-button>
+         </lightning-card>
+          
+
+              <!-- Navigation to relationship object(contact) of an account -->
+              <lightning-card title="Navigation to relationship object(contact) of an account" style="color: blueviolet;">
+                <lightning-button label="Navigation to relationship object" variant="brand" onclick={NavtoRelobj}></lightning-button>
+             </lightning-card>
+
+                <!-- Navigation to extrenal webpage-->
+                <lightning-card title="Navigation to extrenal webpage" style="color: rgb(49, 226, 43);">
+                    <lightning-button label="Navigation to webpage" variant="brand" onclick={NavtoexternalWebpage}></lightning-button>
+                 </lightning-card>
+
+                     <!-- Navigation to another LWC(navigation)-->
+                <lightning-card title=" Navigation to another LWC" style="color: rgb(179, 214, 8);">
+                    <lightning-button label="Navigation to another LWC" variant="brand" onclick={NavtoanotherLWC}></lightning-button>
+                 </lightning-card>
+            
+                     <!-- Get current page reference-->
+                <lightning-card title="Get current page reference" style="color: rgb(138, 8, 214);">
+                    <p>{pageReference}</p>
+                 </lightning-card>
+
+
+
+</template>

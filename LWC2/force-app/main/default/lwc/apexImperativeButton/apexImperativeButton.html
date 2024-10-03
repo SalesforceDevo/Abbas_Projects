@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Callin Apex method Imparitevly with button click">
+      <div class="slds-p-around_medium">
+        <lightning-button label="To call Apex method" variant="brand" onclick={handleClick}></lightning-button>
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="account">
+                    <div class="slds-box" key={account.Id}>
+                        <p><strong>Name</strong> {account.Name}</p>
+                   
+                        </div>
+                </template>
+                 </template>
+
+        
+      </div>
+    </lightning-card>
+    
+</template>

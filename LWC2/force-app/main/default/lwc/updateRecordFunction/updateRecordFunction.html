@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Update Record Function" style="max-width: 100%; height: auto; padding: 1rem; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);">
+        <div style="padding: 1rem;">
+            <div style="width: 100%; overflow-x: auto;">
+                <lightning-datatable
+                    key-field="Id"
+                    data={Accountsdata}
+                    columns={columns}
+                    draft-values={draftValues}
+                    onsave={handleSave}
+                    hide-checkbox-column
+                    style="width: 100%; min-width: 1200px;">
+                </lightning-datatable>
+            </div>
+        </div>
+    </lightning-card>
+</template>

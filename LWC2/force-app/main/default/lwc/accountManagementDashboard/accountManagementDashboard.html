@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="Update Record Function" class="card">
+        
+         <div class="slds-around_large">
+            <div class="filter-section">
+                <lightning-combobox
+                    label="Filter by Industry"
+                    value={filterIndustry}
+                    placeholder="Select Industry"
+                    options={industryOptions}
+                    onchange={handleIndustryFilterChange}
+                    class="filter-combobox">
+                </lightning-combobox>
+    
+                <lightning-combobox
+                    label="Filter by Type"
+                    value={filterType}
+                    placeholder="Select Type"
+                    options={typeOptions}
+                    onchange={handleTypeFilterChange}
+                    class="filter-combobox">
+                </lightning-combobox>
+            </div>
+    
+            
+            <div class="datatable-container">
+                <lightning-datatable
+                    key-field="Id"
+                    data={filteredAccountsData}
+                    columns={columns}
+                    draft-values={draftValues}
+                    onsave={handleSave}
+                    hide-checkbox-column
+                    class="custom-datatable">
+                </lightning-datatable>
+            </div>
+         </div>
+        
+    </lightning-card>
+</template>

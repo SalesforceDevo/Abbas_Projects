@@ -1,0 +1,39 @@
+<template>
+
+   <div style="color: red;">This is record id from navigatiuon 2 {recordId}</div>
+
+    <!-- Navigation to home -->
+    <lightning-card title="Navigation to home page">
+        <lightning-button label="Navigate to home" variant="brand" onclick={NavtoHomeHandler}></lightning-button>
+     </lightning-card>   
+
+    <!-- Navigation to Chatter -->
+     <lightning-card title="Navigation to chatter page">
+        <lightning-button label="Navigate to chatter" variant="brand" onclick={NavtoChatterHandler}></lightning-button>
+     </lightning-card> 
+
+       <!-- Navigation to new record in Contact Object -->
+       <lightning-card title="Navigation to new record in conatact">
+        <lightning-button label="Navigate to new record" variant="brand" onclick={NavtoNewRecordHandler}></lightning-button>
+     </lightning-card> 
+
+            <!-- Navigation to new record with default values in Contact Object -->
+            <lightning-card title="Navigation to new record with default values in conatact">
+                <lightning-button label="Navigate to new record with default values" variant="brand" onclick={NavtoNewRecordHandler}></lightning-button>
+             </lightning-card> 
+
+    
+     <!-- Navigation to list of all records Contact Object -->
+     <lightning-card title="Navigation to list of all records Contact in conatact">
+        <lightning-button label="Navigate to list of all records " variant="brand" onclick={NavtolistHandler}></lightning-button>
+     </lightning-card>        
+     
+       <!-- Navigation to files -->
+       <lightning-card title="Navigation to files">
+        <lightning-button label="Navigation to files" variant="brand" onclick={NavtofilesHandler}></lightning-button>
+     </lightning-card>        
+     
+     
+
+
+</template>

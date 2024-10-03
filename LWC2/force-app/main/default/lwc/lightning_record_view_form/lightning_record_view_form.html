@@ -1,0 +1,21 @@
+<template>
+    <!-- you can view a record according to your own custom layout for fieldsnin this LRF -->
+    <lightning-card title="Lightning Record view Form ">
+        <lightning-record-view-form
+        record-id="0018N00000Q5PZkQAN"
+         object-api-name="Account">
+<div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_6-of-12">
+<lightning-output-field field-name="Name"></lightning-output-field>
+<lightning-output-field field-name="Rating"></lightning-output-field>
+<lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
+    </div>
+    <div class="slds-col slds-size_6-of-12">
+        <lightning-output-field field-name="Industry"></lightning-output-field>
+        <lightning-output-field field-name="Phone"></lightning-output-field>
+    </div>
+
+</div>
+      </lightning-record-view-form>
+      </lightning-card> 
+</template>

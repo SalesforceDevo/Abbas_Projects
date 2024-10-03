@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="External API Data" icon-name="utility:api">
+        <div class="slds-m-around_medium">
+            <lightning-button label="Fetch Data" onclick={handleFetchData} class="slds-m-bottom_small"></lightning-button>
+            
+            <template if:true={data}>
+                <ul>
+                    <template for:each={data} for:item="item">
+                        <li key={item.id}>
+                            <strong>{item.title}</strong><br/>
+                            {item.body}<br/>
+                            <small>by User ID: {item.userId}</small>
+                        </li>
+                    </template>
+                </ul>
+            </template>
+
+            <template if:true={error}>
+                <p class="slds-text-color_error">{error}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

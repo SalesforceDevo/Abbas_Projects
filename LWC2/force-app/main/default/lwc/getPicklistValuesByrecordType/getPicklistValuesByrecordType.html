@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Picklist of Accounts by RecordType">
+        <div class="slds-p-around_medium">
+            <lightning-combobox
+                name="Rating"
+                label="Rating"
+                value={Rating_value}
+                placeholder="Select Rating"
+                options={ratingPicklist}
+                onchange={handleChange_Rating}>
+            </lightning-combobox>
+            <p>Selected Rating value is: {Rating_value}</p>
+        </div>
+
+        <div class="slds-p-around_medium">
+            <lightning-combobox
+                name="Industry"
+                label="Industry"
+                value={Industry_value}
+                placeholder="Select Industry"
+                options={IndustryPicklist}
+                onchange={handleChange_Industry}>
+            </lightning-combobox>
+            <p>Selected Rating value is: {Industry_value}</p>
+        </div>
+        </lightning-card>
+</template>

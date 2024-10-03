@@ -1,0 +1,53 @@
+<template>
+
+    <!-- To create a new account record on LWC itself using LR form -->
+
+    <lightning-card title="Lightning Record Form to create an account record on LWC itself">
+       <lightning-record-form
+        object-api-name={objectname}
+        fields={fieldslist}
+        onsuccess={onsuccesshandler}
+        >
+     </lightning-record-form>
+     </lightning-card>
+     
+     
+    <!-- To Display(viewmode) an account record  -->
+     
+    <lightning-card title="Lightning Record Form To Display(viewmode) an account record  ">
+        <lightning-record-form
+        record-id="0018N00000Q5PZkQAN"
+         object-api-name={objectname}
+         fields={fieldslist} >
+
+      </lightning-record-form>
+      </lightning-card> 
+
+       <!-- To Display(readonly mode) an account record  -->
+     
+    <lightning-card title="Lightning Record Form to Display(readonly mode) an account record  ">
+        <lightning-record-form
+        record-id="0018N00000Q5PZkQAN"
+         object-api-name={objectname}
+         fields={fieldslist}
+         mode="readonly" >
+
+      </lightning-record-form>
+      </lightning-card> 
+
+      
+       <!-- To Display(edit mode) an account record  -->
+     
+    <lightning-card title="Lightning Record Form to Display(edit mode) an account record  ">
+        <lightning-record-form
+        record-id="0018N00000Q5PZkQAN"
+         object-api-name={objectname}
+         fields={fieldslist}
+         mode="edit" >
+
+      </lightning-record-form>
+      </lightning-card> 
+
+
+     
+</template>

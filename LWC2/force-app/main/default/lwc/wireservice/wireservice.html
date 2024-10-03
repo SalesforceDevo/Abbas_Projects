@@ -1,0 +1,29 @@
+<template>
+    <!-- We are getting the details of a user with wire and function, where we have UserId, we are fetching name and email of that user -->
+    <lightning-card title="Wire service with function to fetch the details of the user">
+      <div class="slds-var-m-around_medium">
+        <!-- Check if userDetails is defined before accessing its properties -->
+        <template if:true={userDetails}>
+          <div>Name: {userDetails.Name.value}</div>
+          <div>Email: {userDetails.Email.value}</div>
+        </template>
+        <template if:false={userDetails}>
+          <div>Loading user details...</div>
+        </template>
+      </div>
+    </lightning-card> 
+    
+    <lightning-card title="Wire service with property to fetch the details of the user">
+        <div class="slds-var-m-around_medium">
+          <!-- Check if userDetails is defined before accessing its properties -->
+          <template if:true={userDetailsPropery.data}>
+            <div>Name: {userDetailsPropery.data.fields.Name.value}</div>
+            <div>Email: {userDetailsPropery.data.fields.Email.value}</div>
+          </template>
+          <template if:false={userDetailsPropery.data}>
+            <div>Loading user details...</div>
+          </template>
+        </div>
+      </lightning-card>  
+  </template>
+  
